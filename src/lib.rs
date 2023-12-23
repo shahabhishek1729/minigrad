@@ -1,4 +1,6 @@
-//!
+//! An automatic gradient calculator, implemented in pure Rust for operations on individual
+//! scalars. Will update the crate with support for vectors, matrices and tensors in a future
+//! release
 #![warn(missing_debug_implementations, missing_docs, rust_2018_idioms)]
 #![allow(dead_code)]
 
