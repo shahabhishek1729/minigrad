@@ -45,12 +45,12 @@ c._label = "c";
 let mut d = a * b;
 d._label = "d";
 
-let mut e = &d / &c;
+let ref mut e = &d / &c;
 e._label = "e";
 
 let f = &Scalar::new(10.0, "f");
 
-let mut g = f / &e;
+let mut g = f / e;
 g._label = "g";
 
 // Backpropagate on the internal computation graph and set gradients of each Scalar involved.
